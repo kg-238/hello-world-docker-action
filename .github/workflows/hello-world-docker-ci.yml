@@ -8,9 +8,9 @@ jobs:
     steps:
       - name: Run my own container action
         id: hello-action
-        runs:
+        uses: ./
+        with:
           who-to-greet: '@wulfland'
-
       - name: Output time set in the container
         run: echo "The time was ${{ steps.hello-action.outputs.time }} when the action said hello"
 
