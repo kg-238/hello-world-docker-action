@@ -1,8 +1,5 @@
 name: CI Build for Docker Action
 on:
-  push:
-    branches: [ main ]
-    paths: [ /** ]
   workflow_dispatch:
 jobs:
   test-action:
