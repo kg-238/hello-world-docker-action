@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Run my own container action
         id: hello-action
-        uses: ./action
+        uses: ./action.yml
         with:
           who-to-greet: '@wulfland'
 
