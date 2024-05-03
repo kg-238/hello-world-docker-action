@@ -10,7 +10,8 @@ jobs:
     steps:
       - name: Run my own container action
         id: hello-action
-        run: |
+        uses: ./hello-world-docker-action
+        with:
           who-to-greet: '@wulfland'
 
       - name: Output time set in the container
